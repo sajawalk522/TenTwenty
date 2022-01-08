@@ -1,0 +1,596 @@
+@font-face {
+    font-family: "Matter Regular";
+    src: url("fonts/Matter Regular.eot");
+    src: url("fonts/Matter Regular.eot") format("embedded-opentype"), url("fonts/Matter Regular.woff2") format("woff2"),
+        url("fonts/Matter Regular.woff") format("woff"), url("fonts/Matter Regular.ttf") format("truetype");
+}
+
+/* common css start */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Matter Regular" !important;
+    color: #131313;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.white {
+    color: #fff;
+}
+.black {
+    color: #131313;
+}
+.previous {
+    opacity: 50%;
+}
+/* tentwenty logo css start  */
+
+.header-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 50px;
+    position: relative;
+    z-index: 1;
+}
+.header-logo a {
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.header-logo a sup {
+    font-size: 8px;
+    font-weight: 600;
+    position: relative;
+    top: -6px;
+}
+/* tentwenty logo css end  */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* common css end  */
+/* tentwenty-section css start */
+.tentwenty-section {
+    background: #000;
+    height: 100vh;
+}
+.tentwenty-section .primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.tentwenty-section .primary h1 {
+    color: #fff;
+    font-size: 100px;
+}
+.tentwenty-section .primary h1 sup {
+    text-transform: uppercase;
+    font-size: 8px;
+    position: relative;
+    top: -20px;
+}
+/* badge css start */
+.tentwenty-section .badge h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 22px;
+}
+.tentwenty-section .badge {
+    position: absolute;
+    right: -43px;
+    bottom: 150px;
+    transform: rotate(-90deg);
+    width: 230px;
+}
+/* badge css end */
+.next-section {
+    display: initial;
+    position: absolute;
+    bottom: 60px;
+}
+.tentwenty-section .next-section a {
+    color: #fff;
+    margin: 0 116px;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+    font-size: 22px;
+}
+/* background images setting  */
+.promo-img {
+    position: absolute;
+}
+.promo-img.img-top {
+    width: 765px;
+    top: -288px;
+    right: -285px;
+}
+.promo-img.img-bottom {
+    width: 765px;
+    bottom: -306px;
+    left: -250px;
+    transform: rotate(320deg);
+}
+.promo-img img {
+    width: 100%;
+    filter: opacity(50%);
+}
+/* background images setting  */
+/* tentwenty-section css end */
+
+/* review-container css start  */
+.review-container {
+    background-color: #fff;
+}
+.detial-container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.left-container {
+    width: 60%;
+    max-width: 630px;
+    margin: 0 auto;
+}
+.left-inner h1 {
+    font-weight: 600;
+    font-size: 60px;
+}
+.left-inner .there {
+    display: flex;
+    align-items: center;
+}
+.left-inner .there span {
+    font-size: 50px;
+    padding: 0 10px;
+}
+.left-container .left-inner p {
+    font-size: 22px;
+    padding: 40px 0;
+    line-height: 1.5;
+}
+.regard p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+.regard p:nth-child(2) {
+    font-weight: 500;
+}
+.review-bottom li a {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #131313;
+}
+.review-bottom li:last-child a {
+    opacity: 25%;
+}
+.right-container {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right-container .bg-image {
+    background-image: url("../images/team.png");
+    width: 500px;
+    height: 480px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+/* review-container css end  */
+
+/* Process css start  */
+.process-container {
+    max-width: 1170px;
+    /* max-height: 100%; */
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+.process-bottom {
+    display: flex;
+}
+.process-bottom li {
+    margin: 0 30px 0 0;
+}
+.process-bottom li a {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.process-left {
+    width: 55%;
+    margin: 0 auto;
+    min-height: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.process-left .left-inner {
+    width: 400px;
+}
+.process-left .left-inner h1 {
+    font-weight: 600;
+    font-size: 60px;
+    width: 310px;
+}
+.process-left .left-inner p {
+    font-size: 22px;
+    padding: 25px 0;
+    line-height: 1.5;
+}
+.process-list {
+    margin-right: 30px;
+}
+.process-list ul li {
+    border-bottom: 1px solid#eee;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.process-list ul li:last-child {
+    opacity: 15%;
+    justify-content: space-between;
+}
+.process-list ul li p {
+    font-size: 22px;
+}
+.process-list ul li span {
+    font-size: 22px;
+    margin: 0 25px;
+}
+/* Process css end  */
+
+/* ourskill-container css start  */
+.ourskill-container {
+    background-color: #000;
+    position: relative;
+}
+.ourskill-container .process-left {
+    margin: 0 10px !important;
+    width: 55% !important;
+    min-height: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ourskill-container .process-left .left-inner {
+    width: 100%;
+}
+.skill-img {
+    position: absolute;
+    width: 950px;
+    top: -169px;
+    right: -86px;
+    z-index: 0;
+}
+.skill-img img {
+    width: 100%;
+    filter: opacity(50%);
+}
+
+/* ourskill-container css end  */
+/* assessment css start  */
+.ass-img {
+    position: absolute;
+    width: 1000px;
+    top: -200px;
+    left: -90px;
+    z-index: 0;
+}
+.ass-img img {
+    transform: rotate(258deg);
+    transform: scaleX(-1);
+    width: 100%;
+    filter: opacity(50%);
+}
+.head {
+    width: 100% !important;
+}
+.challenge > div {
+    display: flex;
+    flex-direction: column;
+}
+.challenge > div span {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.challenge {
+    display: flex;
+    justify-content: space-between;
+}
+.challenge > div a {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.challenge > div p {
+    font-size: 22px;
+    opacity: 40%;
+}
+
+/* assessment css end  */
+/* about */
+.about .header-logo {
+    padding: 25px 50px;
+}
+.team-images {
+    position: relative;
+    top: 55px;
+}
+.team-images .banner-image {
+    width: 260px;
+    height: 330px;
+    margin-right: 14px;
+}
+.team-images .banner-image img {
+    object-position: 91% 10px;
+    object-fit: cover;
+    height: 100%;
+}
+.team-images img {
+    width: 100%;
+}
+.images-container {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-image-right {
+    width: 190px;
+    height: 229px;
+    position: absolute;
+    right: -37%;
+    bottom: -154px;
+}
+.banner-image-right img {
+    object-fit: cover;
+    height: 100%;
+    object-position: -10px 0px;
+}
+.banner-image-left {
+    width: 190px;
+    position: absolute;
+    left: -38%;
+    height: 223px;
+    overflow: hidden;
+}
+.about .process-container {
+    position: unset;
+}
+.banner-image-top {
+    width: 190px;
+    position: absolute;
+    left: -38%;
+    height: 145px;
+    overflow: hidden;
+    top: -158px;
+}
+.banner-image-top img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -264px;
+}
+.about-text {
+    font-size: 18px !important;
+}
+.about-heading {
+    font-size: 50px !important;
+}
+/* about */
+/* reqiurement css start  */
+.requirement-container {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.requirement-container > div {
+    width: 100%;
+}
+.requirement-container .requirement-left {
+    min-height: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.requirement-container .requirement-left p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+.requirement-container .req-heading {
+    display: flex;
+    align-items: flex-end;
+    width: 200px;
+}
+.requirement-container .req-heading h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
+.requirement-container .req-heading span {
+    font-size: 30px;
+    padding: 0 10px;
+}
+.requirement-container .list-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.requirement-container .list-items > div {
+    width: 50%;
+    max-width: 490px;
+}
+.requirement-container .list-items ul {
+    list-style: disc;
+    padding-left: 25px;
+    margin: 0;
+}
+.requirement-container .list-items .req-list-right {
+    margin-right: 100px;
+}
+.requirement-container .list-items ul li {
+    line-height: 1.5;
+    font-size: 16px;
+}
+.requirement-container .list-items .req-list-right p {
+    line-height: 1.5;
+    font-size: 16px;
+    opacity: 15%;
+}
+.requirement-container .process-bottom a {
+    color: #131313;
+    font-weight: 600;
+}
+
+/* reqiurement css end  */
+
+/* good luck css start  */
+
+.luck-left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    height: 100%;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.luck-left .left-inner {
+    width: 400px;
+    padding-top: 50px;
+}
+.luck-left .left-inner h1 {
+    font-weight: 600;
+    font-size: 60px;
+}
+.luck-left .left-inner p {
+    font-size: 22px;
+    padding: 30px 0;
+    line-height: 1.5;
+}
+.luck-left .process-bottom li {
+    display: flex;
+    align-items: center;
+}
+.luck-left .process-bottom li p {
+    font-size: 22px;
+}
+.luck-left .process-bottom li span {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* good luck css end  */
+
+@media screen and (max-width: 800px) {
+    .container {
+        overflow: inherit;
+        height: 100%;
+    }
+    .tentwenty-section .primary h1 {
+        font-size: 50px;
+    }
+    .tentwenty-section .next-section a {
+        margin: 0 15px;
+    }
+    .promo-img.img-bottom {
+        width: 338px;
+    }
+    .tentwenty-section .badge h2 {
+        font-size: 16px;
+    }
+    .left-container {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .right-container .bg-image {
+        width: 100%;
+        height: 344px;
+    }
+    .detial-container {
+        flex-direction: column-reverse;
+        align-items: self-start;
+        padding: 10px;
+    }
+    .header-logo{
+        justify-content: center;
+    }
+    .ourskill-container .process-left{
+        width: 100%!important;
+    }
+    .review-container{
+        padding: 10px;
+    }
+    .process-container{
+        width: 100%;
+        /* padding: 10px; */
+    }
+    .process-left .left-inner h1{
+        font-size: 52px;
+    }
+    .process-left{
+        width: 100%;
+    }
+    .process-left .left-inner{
+        width: 100%;
+    }
+    .process-list{
+        margin-right: 0;
+    }
+    .process-list ul li p{
+        font-size: 18px;
+    }
+    .ass-img{
+        width: 100%;
+    }
+    .challenge > div a{
+        font-size: 20px;
+    }
+    .process-left .left-inner p{
+        font-size: 20px;
+    }
+    .process-bottom li a{
+        font-size: 14px;
+    }
+    .requirement-container .list-items > div{
+        width: 100%;
+    }
+    .luck-left{
+        width: 100%;
+    }
+    .luck-left .left-inner{
+        width: 100%;
+    }
+    .luck-left .left-inner h1{
+        font-size: 50px;
+    }
+    .goodluck-container .process-bottom{
+        flex-direction: column;
+    }
+}
